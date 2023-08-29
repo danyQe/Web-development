@@ -3,90 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <title>Web Development Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-image:('bg_image.jpeg');
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            background: url('homepage.jpg') center/cover no-repeat; /* Set the background image */
-            color: #fff;
-            height: 100vh; /* Ensure the body takes up the full viewport height */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         header {
-            text-align:center;
-            padding: 100px 0;
-        }
-
-        header h1 {
-            color: rgba(20 20 21); /* Color the "GROUP 8" name */
-            font-style:italic; /* Apply italic font style */
-            font-size: 48px; /* Increase font size */
-            text-align:center;
-            margin-top: -0px;
-            margin-bottom: 60px; /* Add margin for spacing */
-            margin-left: -30px; /* Move "GROUP 8" slightly to the left */
-        }
-
-        .intro {
-            color: #1bee4c; /* Color the introduction text */
-            font-size: 24px; /* Increase font size */
-            font-style: italic; /* Apply italic font style */
-            background-color: rgba(82, 79, 79, 0.653); /* Transparent background */
-            padding: 10px; /* Add padding for spacing */
-            border-radius: 5px; /* Add rounded corners */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .login-button:hover {
-            background-color:#16ec44;
-        }
-
-        .login-button {
-            text-decoration:dotted;
+            background-color: #100f0f;
             color: white;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none; /* Remove default border */
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            padding: 50px 0;
         }
 
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #6697a7d4;
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration:double;
+            color: #333;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7ed6ad;
+        }
+
+        .project-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .project-card {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .homepage
+        {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+
+        }
+        .aboutus
+        {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+
+        }
+        .Contact
+        {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border-width: 50%;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>GROUP 8</h1>
-        <p class="intro">Exploring creativity through design and development.</p>
-        <a class="login-button" href="login.html">sign in</a>
+        <h1>Group 8</h1>
     </header>
-    <div class="container">
-        <!-- Add more content or portfolio items as needed -->
-    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="project1.html">Project 1</a></li>
+            <li><a href="project2.html">Project 2</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li><a href="project4.html">Project 4</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html">logout</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+       <div class="homepage"> 
+        <h2>Home page</h2>
+        <p>Welcome to Our Portfolio Website
+            Explore our diverse range of projects, each crafted with passion and dedication. Our team of three individuals brings unique expertise to every endeavor, resulting in innovative solutions that push boundaries. Discover the world of creativity and innovation through our projects.</p>
+        </div>
+            <br><br>
+<div class="aboutus">
+        <h2>About Us</h2>
+        <p>
+            Who We Are
+We are a dynamic group of three individuals, united by our passion for creativity, innovation, and problem-solving. Our team brings together a blend of skills, experiences, and perspectives that drive the success of our projects. With a commitment to excellence, we strive to create impactful solutions that make a difference. From coding to design, strategy to execution, we collaborate seamlessly to turn ideas into reality.
+</div>
+        </p>
+    <section class="project-links">
+        <div class="project-card" onclick="location.href='project1.html';">
+            <h3>Project 1: Fraud detection</h3>
+            <p>Fraud Detection and Prevention, where technology stands guard against deceit. Our cutting-edge solutions utilize advanced algorithms and machine learning to safeguard businesses and individuals from fraudulent activities.</p>
+        </div>
+        <div class="project-card" onclick="location.href='project2.html';">
+            <h3>Project 2: Smart agriculture</h3>
+            <p>Agriculture Solutions, where technology meets the fields to cultivate a smarter tomorrow. Our cutting-edge solutions harness the power of AI and data analytics to transform traditional farming into a precision-driven, efficient practice.</p>
+        </div>
+        <div class="project-card" onclick="location.href='project3.html';">
+            <h3>Project 3:Autonomous Delivery drones</h3>
+            <p>Autonomous Delivery Drones, where innovation takes flight to redefine logistics. Our cutting-edge drones are revolutionizing the way goods are transported, offering unprecedented speed, efficiency, and convenience.</p>
+        </div>
+        <div class="project-card" onclick="location.href='project4.html';">
+            <h3>Project 4:AI Healthcare Assistant</h3>
+            <p>AI Healthcare Assistant, where innovation meets care to redefine healthcare. Our advanced AI-powered platform is designed to enhance patient experiences, streamline processes, and provide comprehensive medical support.</p>
+        </div>
+    </section>
+        <div class="Contact" onclick="location.href='contact.html';">
+            <h3>Contact us</h3>
+            <p>Get in Touch
+                Have a question, a partnership opportunity, or simply want to connect? We'd love to hear from you. </p>
+                <p>Reach out to us through the following channels:</p>
+            
+        </div>
+    </section>
     <footer>
         <p>&copy; Group 8. All rights reserved.</p>
     </footer>
+
+    <!-- ... (rest of your content) -->
 </body>
 </html>
